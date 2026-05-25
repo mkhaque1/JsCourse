@@ -4,10 +4,10 @@
 
 // var, let , const
 
-let naam = 'sakib'; // value poriborton
+let naaam = 'sakib'; // value poriborton
 const boys = 25; // value oporiborton
 
-console.log(naam);
+console.log(naaam);
 console.log(boys);
 
 const name = 'sakib'; // string data type
@@ -33,3 +33,35 @@ console.log(data);
 let x;
 
 console.log(x);
+
+// string methods
+
+let a = 'lichee';
+let b = 'orange';
+
+let example = 'i love javascript code';
+
+// template literal (`backtick`)
+let naam = 'karim';
+console.log(`amar nam ${naam}, ami ${a} khete like kori`);
+
+// string 5 methods
+
+// length
+
+console.log(naam.length);
+
+// toUpperCase()
+
+console.log(naam.toUpperCase());
+
+// toLowerCase()
+console.log(naam.toLowerCase());
+
+// includes()
+
+console.log(example.includes('javascript'));
+
+// slice() // index [0,1,2,3,4]
+
+console.log(naam.slice(0, 2));
