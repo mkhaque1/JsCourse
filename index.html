@@ -6,11 +6,33 @@
     <title>JavaScript</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1>JavaScript</h1>
+  <!--  body - parent -->
+  <body id="body">
+    <h1 id="title">JavaScript</h1>
+    <p class="text">Hello</p>
 
-    <button onclick="alert('Button clicked')">Click me</button>
+    <div>
+      <p class="item">One</p>
+      <p class="item">Two</p>
+      <p class="item">Three</p>
+    </div>
+
+    <div>
+      <h1 id="count">0</h1>
+      <button id="btn">Click Me</button>
+
+      <button id="colorBtn">Change Color</button>
+    </div>
+
+    <div>
+      <input id="nameInput" placeholder="Enter your name" />
+      <button id="submit">update</button>
+
+      <h2 id="output"></h2>
+    </div>
+
+    <!-- <button onclick="alert('Button clicked')">Click me</button> -->
   </body>
 
-  <script src="objectMethod.js"></script>
+  <script src="eventListener.js"></script>
 </html>
