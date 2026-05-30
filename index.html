@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <!--  body - parent -->
-  <body id="body">
+  <body class="dark">
     <h1 id="title">JavaScript</h1>
     <p class="text">Hello</p>
+
+    <!-- inline script -->
+    <button onclick="alert('Button clicked')">Click me</button>
 
     <div>
       <p class="item">One</p>
@@ -31,7 +34,30 @@
       <h2 id="output"></h2>
     </div>
 
-    <!-- <button onclick="alert('Button clicked')">Click me</button> -->
+    <!-- classList -->
+
+    <div class="room"></div>
+    <div class="room light-on"></div>
+
+    <button id="darkBtn">Dark Mode</button>
+
+    <button id="element">Add Paragraph</button>
+
+    <div id="container">
+      <p id="text">Delete Me</p>
+    </div>
+
+    <button id="delete">Delete Paragraph</button>
+
+    <!-- todo -->
+
+    <h1 style="margin-bottom: 20px">TODO APP</h1>
+
+    <input id="taskInput" />
+
+    <button id="addBtn">Add Task</button>
+
+    <ul id="taskList"></ul>
   </body>
 
   <script src="eventListener.js"></script>

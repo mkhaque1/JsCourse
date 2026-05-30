@@ -43,3 +43,67 @@ submit.addEventListener('click', () => {
     output.innerText = `Hello, ${name}!`;
   }
 });
+
+// dom powerfull features - classList
+
+// Element.classList.add('active'); // add new element
+// Element.classList.remove(); // remove element
+// Element.classList.toggle('active'); // toggle example
+
+const dark = document.getElementById('darkBtn');
+
+dark.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+});
+
+// createElement
+
+const addElement = document.getElementById('element');
+const container = document.getElementById('container');
+
+let p; // global scope variable
+
+addElement.addEventListener('click', () => {
+  p = document.createElement('p');
+  p.innerText = 'i am new paragrapgh';
+  console.log(p);
+  container.appendChild(p);
+});
+
+console.log(p); // local scope variable
+
+// remove element
+
+const deleteBtn = document.getElementById('delete');
+const deleteItem = document.getElementById('text');
+
+deleteBtn.addEventListener('click', () => {
+  deleteItem.remove();
+  if (p) {
+    p.remove();
+  }
+});
+
+// todo
+
+const addBtn = document.getElementById('addBtn');
+const taskInput = document.getElementById('taskInput');
+const taskList = document.getElementById('taskList'); // ul parent
+
+addBtn.addEventListener('click', () => {
+  const li = document.createElement('li'); // HTMLelement create
+
+  li.innerText = taskInput.value; // inside li value show
+
+  taskList.appendChild(li); // element add inside parent
+
+  taskInput.value = '';
+
+  li.addEventListener('click', () => {
+    li.classList.toggle('done');
+  });
+
+  li.addEventListener('dblclick', () => {
+    li.remove();
+  });
+});
