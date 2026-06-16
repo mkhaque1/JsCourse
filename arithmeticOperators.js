@@ -1,13 +1,9 @@
 // jog kora
 
-let a = 10;
-let b = 20;
+let a = 5;
+let b = 10;
 
-let c = 'hello';
-let d = 'world';
-
-console.log(a + b);
-console.log(c + d);
+console.log(a + b); // addion
 
 // minus
 
